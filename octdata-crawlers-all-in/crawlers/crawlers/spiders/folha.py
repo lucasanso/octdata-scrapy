@@ -127,7 +127,7 @@ class FolhaSpider(BaseSpider):
                 item["last_update"] = fmt_date
 
             item["acquisition_date"] = datetime.now(pytz.timezone('America/Sao_Paulo')).strftime(r'%d-%m-%Y') 
-            item["newspaper"] = "FolhaSP"
+            item["newspaper"] = "Folha de São Paulo"
             item["url"] = response.url
             item["tags"] = search_tags(article)
             item["accepted_by"] = validate_article(article) 

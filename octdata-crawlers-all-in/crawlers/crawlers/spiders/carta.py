@@ -118,7 +118,7 @@ class CartaSpider(BaseSpider):
             item['accepted_by'] = accepted
             item['last_update'] = self.format_date(mod_date_raw) or item['publication_date']
             
-            item['newspaper'] = 'CartaCapital'
+            item['newspaper'] = 'Carta Capital'
             item['title'] = title.strip() if title else ""
             item['article'] = full_text
             
